@@ -1,0 +1,24 @@
+<html ng-app="cargaApp">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"/>
+    </head>
+    <body>
+        <div id="menu">
+            <div id="menu">
+                <div class="pure-menu pure-menu-horizontal">
+                    <a class="pure-button pure-button-primary" href="index.html">Voltar</a>
+                    <a class="pure-button pure-button-primary" href="#/cadCarga">Cadastro de Carga</a>
+                    <a class="pure-button pure-button-primary" href="#/tabCarga">Cargas Cadastradas</a>
+                </div>
+                <ng-view></ng-view>     
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-resource.min.js"></script>
+            <script src="app2.js"></script>
+    </body>
+</html>

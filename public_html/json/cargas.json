@@ -1,0 +1,126 @@
+{
+  "cargas": [
+    {
+      "id": 2,
+      "tiposCarga": "MORGAN",
+      "transps": "SCRMIM",
+      "cidades": "TUBARAO",
+      "tipos": "Biterm",
+      "peso": "2000",
+      "estado": "SP"
+    },
+    {
+      "tiposCarga": "MILHO",
+      "transps": "SCREMIM",
+      "cidades": "PARANA",
+      "tipos": "CARRETA",
+      "peso": "150000",
+      "id": 3,
+      "estado": "SC"
+    },
+    {
+      "tiposCarga": "BANANA",
+      "transps": "FLEX",
+      "cidades": "URUBICI",
+      "estado": "SC",
+      "tipos": "LS",
+      "id": 4,
+      "peso": "7862"
+    },
+    {
+      "tiposCarga": "OVO",
+      "transps": "OVOS GUTI",
+      "cidades": "SAO LUDGERO",
+      "estado": "MG",
+      "tipos": "BITRUK",
+      "id": 5
+    },
+    {
+      "tiposCarga": "CERVEJA",
+      "transps": "BIG JACK",
+      "cidades": "ORLEANS",
+      "estado": "AC",
+      "tipos": "CARRETA",
+      "id": 6,
+      "peso": "5000"
+    },
+    {
+      "tiposCarga": "MACONHA",
+      "transps": "CUBA",
+      "cidades": "MEXICO",
+      "estado": "AC",
+      "tipos": "RODOTREM",
+      "id": 7,
+      "peso": "10000000"
+    },
+    {
+      "tiposCarga": "PO INTEGRAL",
+      "transps": "NESTLE",
+      "cidades": "TUBARÃO",
+      "estado": "SC",
+      "tipos": "LATINHA",
+      "peso": "5006",
+      "id": 8
+    },
+    {
+      "tiposCarga": "LEITE",
+      "transps": "FRIMESA",
+      "cidades": "INDAIAL",
+      "estado": "RS",
+      "tipos": "BICILCETA",
+      "peso": "5789",
+      "id": 9
+    },
+    {
+      "tiposCarga": "GELO",
+      "transps": "GELO FRIO",
+      "cidades": "CRICIUMA",
+      "estado": "SC",
+      "tipos": "CAMINHÃO",
+      "peso": "7965",
+      "id": 10
+    }
+  ],
+  "empresas": [
+    {
+      "id": 4,
+      "nome": "Alexandro",
+      "transp": "São Miguel",
+      "cidade": "Tubarao",
+      "tipo": "C",
+      "estado": "DF"
+    },
+    {
+      "nome": "JOSIMAR",
+      "transp": "MORGAM",
+      "cidade": "TUBARÃO",
+      "estado": "SC",
+      "tipo": "CD",
+      "id": 5
+    },
+    {
+      "nome": "JOAO",
+      "transp": "SL",
+      "cidade": "CRICIUMA",
+      "estado": "AC",
+      "tipo": "CE",
+      "id": 6
+    },
+    {
+      "nome": "VETEL",
+      "transp": "FORMULA 1",
+      "cidade": "TUBRÃO",
+      "estado": "MG",
+      "tipo": "E",
+      "id": 7
+    },
+    {
+      "nome": "PAULO",
+      "transp": "MORGAM",
+      "cidade": "TUBARAO",
+      "estado": "SC",
+      "tipo": "E",
+      "id": 8
+    }
+  ]
+}

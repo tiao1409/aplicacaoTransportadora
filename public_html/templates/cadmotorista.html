@@ -1,0 +1,62 @@
+<form name="cadastroMotoristaForm">
+    <div class="pure-form pure-form-aligned">
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="id"> Código </label>
+                <input id="id" name="id" type="text" ng-model="empresa.id" />
+                <br>
+                <label for="nome"> Nome </label>
+                <input id="nome" name="nome" type="text" ng-model="empresa.nome" minlength="2" required />
+                <span class="aviso1" ng-show="cadastroMotoristaForm.transp.$erro.required"> (*) </span>
+                <span class="aviso1" ng-show="cadastroMotoristaForm.transp.$dirty && cadastroMotoristaForm.transp.$erro.required"> * Campo Obrigatorio </span>
+                <span class="aviso1" ng-show="cadastroMotoristaForm.transp.$dirty && cadastroMotoristaForm.transp.$erro.minlength"> * Minimo 5 caracters </span>
+                <br>
+                <label for="transp"> Transportadora </label>
+                <input id="transp" name="transp" type="text" ng-model="empresa.transp" minlength="2" required />
+                <span class="aviso1" ng-show="cadastroMotoristaForm.transp.$erro.required"> (*) </span>
+                <span class="aviso1" ng-show="cadastroMotoristaForm.transp.$dirty && cadastroMotoristaForm.transp.$erro.required"> * Campo Obrigatorio </span>
+                <span class="aviso1" ng-show="cadastroMotoristaForm.transp.$dirty && cadastroMotoristaForm.transp.$erro.minlength"> * Minimo 5 caracters </span>
+                <br>
+                <label for="cidade"> Cidade </label>
+                <input id="cidade" name="cidade" type="text" ng-model="empresa.cidade" minlength="2" required />
+                <span class="aviso1" ng-show="cadastroMotoristaForm.cidade.$erro.required"> (*) </span>
+                <span class="aviso1" ng-show="cadastroMotoristaForm.cidade.$dirty && cadastroMotoristaForm.cidade.$erro.required"> * Campo Obrigatorio </span>
+                <span class="aviso1" ng-show="cadastroMotoristaForm.cidade.$dirty && cadastroMotoristaForm.cidade.$erro.minlength"> * Minimo 5 caracters </span>
+                <br>
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="multi-state">Estado</label>
+                
+                    <select id="multi-state" class="pure-input-1-8" ng-model="empresa.estado">
+                        <option>SC</option>
+                        <option>MG</option>
+                        <option>RS</option>
+                        <option>DF</option>
+                        <option>PR</option>
+                        <option>SP</option>
+                        <option>RJ</option>
+                        <option>EP</option>
+                        <option>AC</option>
+                    </select>
+                </div>
+                <label for="tipo"> Categoria </label>
+                <input id="tipo" name="tipo" type="text" ng-model="empresa.tipo" minlength="1" required />
+                <span class="aviso1" ng-show="cadastroMotoristaForm.transp.$erro.required"> (*) </span>
+                <span class="aviso1" ng-show="cadastroMotoristaForm.tipo.$dirty && cadastroMotoristaForm.tipo.$erro.required"> * Campo Obrigatorio </span>
+                <span class="aviso1" ng-show="cadastroMotoristaForm.tipo.$dirty && cadastroMotoristaForm.tipo.$erro.minlength"> * Minimo 2 caracters </span>
+                <br>
+                <label for="telefone"> Telefone </label>
+                <input id="telefone" name="telefone" type="text" ng-model="empresa.telefone" />
+                <br>
+                <br>
+                <label for="aligned-cb" class="pure-checkbox">
+                    <input type="checkbox" id="aligned-cb"/> Li e concordo com os termos e condições.
+                </label>
+                <br>
+                <br>
+                <button ng-click="salvar(empresa)" ng-disabled="cadastroMotoristaForm.$invalid"> Salvar </button>
+                <button ng-click="salvarCadastrarNovo(empresa)" ng-disabled="cadastroMotoristaForm.$invalid"> Salvar e Cadastrar </button>
+                <button ng-click="cancelar()"> Cancelar </button>
+            </div>
+        </fieldset>
+    </div>
+</form>

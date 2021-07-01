@@ -1,0 +1,30 @@
+<table class="pure-table">
+
+    <thead>
+        <tr>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Transportadora</th>
+        <th>Cidade</th>
+        <th>Estado</th>
+        <th>Categoria</th>
+        <th>Telefone</th>
+        </tr>
+    </thead>
+    <br>
+    <br>
+    <tbody ng-repeat="empresa in empresas track by $index">
+        <tr class="pure-table pure-table-bordered">
+        <td>{{empresa.id}}</td>
+        <td>{{empresa.nome}}</td>
+        <td>{{empresa.transp}}</td>
+        <td>{{empresa.cidade}}</td>
+        <td>{{empresa.estado}}</td>
+        <td>{{empresa.tipo}}</td>
+        <td>{{empresa.telefone}}</td>
+        <td><a class="pure-button pure-button-primary"href="#/cadmotorista/{{empresa.id}}">Editar</a></td>
+        <td><a class="pure-button pure-button-primary"href="" ng-click="excluir(empresa)">Excluir</a></td>
+        </tr>
+    </tbody>
+</table>
+

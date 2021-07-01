@@ -1,0 +1,28 @@
+<table class="pure-table">
+    <thead>
+        <tr>
+        <th>Código</th>
+        <th>Tipo de Carga</th>
+        <th>Transportadora</th>
+        <th>Cidade</th>
+        <th>Estado</th>
+        <th>Tipos</th>
+        <th>Peso</th>
+        </tr>
+    </thead>
+     <br>
+     <br>
+    <tbody ng-repeat="carga in cargas track by $index">
+        <tr class="pure-table pure-table-bordered">
+        <td >{{carga.id}}</td>
+        <td >{{carga.tiposCarga}}</td>
+        <td >{{carga.transps}}</td>
+        <td >{{carga.cidades}}</td>
+         <td >{{carga.estado}}</td>
+        <td >{{carga.tipos}}</td>
+        <td >{{carga.peso}}</td>
+        <td><a class="pure-button pure-button-primary"  href="#/cadCarga/{{carga.id}}">Editar</a></td>
+        <td><a class="pure-button pure-button-primary" href="" ng-click="EXCLUIR(carga)">Excluir</a></td>
+        </tr>
+    </tbody>
+</table>
